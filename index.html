@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Site</title>
-</head>
-<body>
-    
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Красивый Сайт</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-b from-violet-900 via-violet-700 to-violet-600 text-white min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="p-6 text-center">
+      <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">
+        Добро пожаловать
+      </h1>
+      <p class="mt-4 text-lg text-violet-200">
+        Современный сайт, созданный с любовью и Tailwind CSS
+      </p>
+      <a href="#features" class="inline-block mt-6 px-6 py-3 bg-white text-violet-800 font-semibold rounded-xl shadow hover:bg-violet-100 transition">
+        Узнать больше
+      </a>
+    </header>
+
+    <!-- Features -->
+    <section id="features" class="flex-grow py-12 px-6 bg-white text-gray-800">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">Наши преимущества</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-violet-100 p-6 rounded-2xl shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-2">Быстрота</h3>
+            <p>Молниеносная загрузка и отзывчивость на всех устройствах.</p>
+          </div>
+          <div class="bg-violet-100 p-6 rounded-2xl shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-2">Красота</h3>
+            <p>Минималистичный и современный дизайн, который приятно использовать.</p>
+          </div>
+          <div class="bg-violet-100 p-6 rounded-2xl shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-2">Простота</h3>
+            <p>Интуитивно понятный интерфейс и чистая структура.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-6 text-center text-sm text-violet-200">
+      © 2025 Красивый Сайт. Все права защищены.
+    </footer>
+  </body>
 </html>
